@@ -1,34 +1,34 @@
 @font-face {
     font-family: 'Fleya-Light';
-    src: url('Fleya-light.woff')
+    src: url('Fleya-light.woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Fleya-LightItalic';
-    src: url('./Fleya-LightItalic.ttf')
+    src: url('Fleya-LightItalic.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'SuisseIntl-Bold';
-    src: url('SuisseIntl-Bold.woff')
+    src: url('SuisseIntl-Bold.woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SuisseIntl-Book';
-    src: url('./SuisseIntl-Book.woff')
+    src: url('SuisseIntl-Book.woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RightGrotesk-WideMedium';
-    src: url('RightGrotesk-WideMedium.ttf')
+    src: url('RightGrotesk-WideMedium.ttf');
     font-weight: normal;
     font-style: normal;
 }
