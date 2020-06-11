@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="dragscroll-master/dragscroll.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<div class="header">
+  <h1>Notes on crowd control.</h1>
+  <p> Photographic investigation</p>
+ </div>
+
+<body class="dragscroll">
+
+
+	<main>
+		<article id="perspective-map">
+			<div class="text-content">
+				<h2>1. Perspective Map</h2> 
+				<h3>An introduction to the camera vision.</h3>
+				<p>Fig 1-3.Presents how the perspective map is created from a still iamge. A reference person (a) at the front of a walkway and (b) at the end, and (c) which scales pixels by their relative size in the 3D scene.</p>
+				<p> The extraction of features from crowd segments should take into account the effects of perspective. Because objects closer to the camera appear larger, any pixels associated with a close foreground object account for a smaller portion of it than those of an object farther away. This can be compensated by normalizing for perspective during feature extraction (e.g., when computing the segment area). Each pixel is weighted according to a perspective normalization map, which is based on the expected depth of the object that generated the pixel. Pixel weights encode the relative size of an object at different depths, with larger weights given to far objects.
+			</div>
+			<div class="image-container block-1">
+				<img src="all-images/01_perspective_map_NG.jpg">
+				<div class="extra-text" style="top: 420px; left: -0px; width: 600px;">
+					<p>From the Dutch Constitution</p>
+					<p>Article 1. All persons in the Netherlands shall be treated equally in equal circumstances. Discrimination on the grounds of religion, belief, political opinion, race or sex or on anyother grounds whatsoever shall not be permitted.
+					<p>Article 9. The right of assembly and demonstration shall be recognised, without prejudice to the responsibility of everyone under the law.	
+					</p>
+				</div>
+			</div>
+			<div class="image-container block-2">
+				<img src="all-images/02_perspective_map_NG.jpg">
+				<div class="extra-text" style="top: 420px; left: 0px; width: 600px;">
+					<p>The duration of the camera surveillance depends on the nature and the extent of the nuisance. The mayor decides each year where the cameras will be positioned following an evaluation. There are approximately 140 fixed video cameras in The Hague that are constantly collecting data that are later processed by algorithms to detect among other factors - unusal crowd behaviour.</p>
+				</div>
+			</div>
+			<div class="image-container block-3">
+				<img src="all-images/03_perspective_map_NG.jpg">
+				<div class="extra-text" style="top: -70px; left: 0px; width: 500px;">
+					<p>By definitition <i>crowd</i> is a large number of people gathered together. A group of people, gathered together in an unorganized way, form a crowd. When the crowd turns violent/unruly and tends to cause trouble/harm, it is called a <i>mob</i>. </p>
+				</div>
+			</div>			
+		</article>
+		
+		<article id="crowd-density">
+			<div class="text-content">
+				<h2>2. Crowd Density</h2>
+				<h3>"Democracy, by nature, is a contest between clashing political desires. That is why the public square matters so much."</h3>
+				<p>Saul Frampton <i>Agony In the Agora</i></p> 
+				<p>Fig 4-8. Crowd density. The most popular algorithms to measure crowd density where applied from level of service used to measure the flow of vehicular traffic in the United States. A pedestrian scale was proposed by John Fruin and later converted to a density measure by Hidayah Rahmalan, Mark S Nixon, and John N Carter <i> - On crowd density estimation for surveillance.</i> Crowds of (a) very low, b) low, (c) moderate, (d) high, and (e) very high density are shown in this figure.</p>
+				<p> Crowd density can be defined as the level of congestion observed across a scene at a given instant. For calculation the scene fixed grid is applied. The method is not working when the density of the crowd is too dense or if the quality of the source image is not good enough for detection. 
+				<p>There are many controversies regarding crowd counting during protests. How many people took part in the protest depends on which political side you ask. For example in Hong Kong’s massive pro-democracy rally organisers estimated 510 000, while the Hong Kong police’s official estimate around 98 000. Two independent analyses placed turnout between 140 000 on the low end and 172 000 on the high end. </p>
+			</div>
+			<div class="image-container block-1">
+				<img src="all-images/01_crowd_density_NG.jpg">
+				<div class="extra-text" style="top: -40px; left: 00px; width: 500px;">
+					<h3>crowd density: 5,7%</h3>
+				</div>
+			</div>	
+
+			<div class="image-container block-2">
+				<img src="all-images/02_crowd_density_NG.jpg">
+				<div class="extra-text" style="top: -40px; left: 00px; width: 500px;">
+					<h3>crowd density: 18,57%</h3>
+				</div>
+			</div>	
+			<div class="image-container block-3">
+				<img src="all-images/03_crowd_density_NG.jpg">
+				<div class="extra-text" style="top: 420px; left: 00px; width: 500px;">
+					<h3>crowd density: 58,57%</h3>
+				</div>
+			</div>	
+			<div class="image-container block-4">
+				<img src="all-images/04_crowd_density_NG.jpg">
+				<div class="extra-text" style="top: 00px; left:-550px; width: 600px;">
+					<h3>What we can learn from the way how computer vision is looking at our movement?</h3>
+				</div>
+			</div>	
+			<div class="image-container block-5">
+				<img src="all-images/05_crowd_density_NG.jpg">
+				<div class="extra-text" style="top: 680px; left:-600px; width: 600px;">
+					<p>Already it is clear that one’s answer to the question “Were there crowds in ancient Greece?” depends entirely on one’s definition of “crowd.” To Karpyuk, a key requirement is that a crowd be unauthorized, paralegal or illegal: “It is necessary to note that an unorganized mass gathering was an extremely rare phenomenon for archaic Greece <i>...”This claim comes near the beginning of his survey of alleged cases of crowd activities in pre-Hellenistic Greece.”</i> A few pages later he writes <i> “I could find no sure trace [in Athens during the Peloponnesian War] of crowd activities, city riots and so on.”(Already the problems with Karpyuk’s conclusion are evident).</i> Karpyuk’s stated definition of “crowd,” quoted above, is further restricted near the end of his introductory section. Discussing the evolution and social significance of the term ὄχλος in fifth-century Athens, he observes: “[Although] used frequently by the Greek authors in the meaning of “crowd,” [ὄχλος] can also mean (and did in fact very often mean) the mob, the low strata of citizens, or non-citizens ... i.e., it assumed social or situational characteristics ... [T]here is no word in ancient Greek to designate the crowd separately from the mob ...”</p>
+					<p> Jusin Job Schwab </p> 
+					<p><i>The Birth of the Mob: Representations of Crowds in Archaic and Classical Greek Literature</i></p>
+				</div>
+			</div>	
+		</article>
+		
+		<article id="social-force">
+			<div class="text-content">
+				<h2>3. Social Force Model</h2>
+				<h3>How much freedom are we as citizens willing to give up for our security?</h3>
+				<p>Fig.9-10. Detecting and localizing <i>abnormal</i> behaviors in crowd videos is a very intense area of research and development. The main application is leading into automatic detection of riots or chaotic acts in crowds and localization of the abnormal regions in scenes for high resolution analysis. One of the very efficient one is social force model. For this purpose, a grid of particles is placed over the image and it is advected with the space-time average of optical flow. By treating the moving particles as individuals, their interaction forces are estimated using social force. The interaction force is then mapped into the image plane to obtain Force Flow for every pixel in every frame. Randomly selected spatio-temporal volumes of Force Flow are used to model the normal behavior of the crowd. Later frames are classifed as normal and abnormal. The regions of anomalies in the abnormal frames are localized using interaction forces. </p>
+			</div>
+			<div class="image-container block-5">
+				<img src="all-images/01_social_force_NG.jpg">
+			</div>	
+			<div class="image-container block-5">
+				<img src="all-images/02_social_force_NG.jpg">
+				<div class="extra-text" style="top: -80px; left:0px; width: 300px;">
+					<p>Figure 10. The Optical flow (red) and the computed interaction force (yellow) vectors of two sampled frames. Interaction force is computed accordingly for pedestrians who are approaching each other.</p>
+				</div>
+		
+			</div>
+				
+			</div>	
+		</article>		
+		
+		<article id="abnormal-patterns">
+			<div class="text-content">
+				<h2>4. Abnormal Patterns</h2>
+				<h3>How we can define normative behaviour within the public space?</h3>
+				<p>Fig.11-15. Anomaly detection in crowded scenes has become an important topic of research in the computer vision community over the last few years. It is of considerable practical interest in monitoring multiple surveillance feeds, allowing human security personnel to focus only on the ones that are more likely to be abnormal. The varying density of objects in crowded scenes, inter-object occlusions and low resolution of the surveillance videos resulting in very few number of pixels on each object makes the task extremely challenging. Due to these challenges, traditional methods based on object detection, tracking of individuals etc., are not applicable for this task. Further, anomalous events are very much dependent on the context. For example, a person running in a marathon is not an anomaly while the same on a road or a mall is an anomaly. Abnormal behavior in a video sequence can be of different types. In local abnormal events, local regions of the video behave in a different way compared to its neighbors.</p>
+
+			</div>
+			<div class="image-container block-1">
+				<img src="all-images/01_abnormal_NG.jpg">
+				<div class="extra-text" style="top: 420px; left:0px; width: 500px;">
+					<p>Figure 11. Example of correctly detected anomaly after training. This anomaly was detected after training spatial anomaly within particual scene. A person (red) deviates from the track frequented by most pedestrians. </p>
+				</div>
+			</div>	
+			<div class="image-container block-2">
+				<img src="all-images/02_abnormal_NG.jpg">
+				<div class="extra-text" style="top: 420px; left:0px; width: 500px;">
+					<p>Figure 12. Anomaly in a dense crowd (red) where two person suddenly stop in a rally. Image reproduced from protest study.</p>
+				</div>
+			</div>	
+			<div class="image-container block-3">
+				<img src="all-images/03_abnormal_NG.jpg">
+				<div class="extra-text" style="top: 420px; left:0px; width: 500px;">
+					<p>Figure 13. Example of a <i>normal</i> behaviour following the logic of the recognition pattern.</p>
+				</div>
+			</div>	
+			<div class="image-container block-4">
+				<img src="all-images/04_abnormal_NG.jpg">
+				<div class="extra-text" style="top: -200px; left:0px; width: 1100px;">
+					<p>Here Karpyuk’s flat statement, that “crowd as a social phenomenon” was absent from Greek life during the period in question, begins to make more sense. An ὄχλος is not a “true” crowd, because the term carries, or can be made to carry, a negative social charge, making it more the equivalent of the English word “mob”. In his model, a “crowd,” properly so defined, cannot be laden with “social or situational characteristics” beyond those given in his earlier definition: group action outside existing channels, directed towards a specific goal. Further semantic loading, e.g. aristocratic disdain for a lower-class group, takes the term out of the realm of pure “crowd-ness.”Even earlier than this, Karpyuk has opposed another term, “mass[es],” to his restricted definition of “crowd.” “Social historians and classicists ... usually substitute the notion “crowd” for the notion “masses;”that is, they use the word “crowd” to describe a social object which he feels does not merit that label. As an example, he cites Millar’s work: “Fergus Millar in The Crowd in Rome in the Late Republic ... regard[s] “crowd(s)” as a synonym to “the masses” ... [p]lac[ing] “the populus Romanus – or the crowd that represented it – in the center of our picture of the Roman system." Karpyuk does not provide a definition of “masses,” but this reference to Millar allows us to grasp at least some of what he means by the term. substitution of “crowd” for populus/“mass.” The “masses,” then, are “the people” imagined as a corporate body, envisioned as separate from their elite leaders, yet most definitely not as instantiated in a specific gathering or gatherings of some portion there of. If a “mob” is not a “crowd” because this is too specific and loaded a term – a group of members of a certain class – then the “masses” are not, and should not be confused with, “the crowd” for the opposite reason – “mass” is too general a concept.</p>
+					<p> Jusin Job Schwab <i>The Birth of the Mob: Representations of Crowds in Archaic and Classical Greek Literature</i> </p> 
+				</div>
+			</div>	
+			<div class="image-container block-5">
+				<img src="all-images/05_abnormal_NG.jpg">
+				<div class="extra-text" style="top: 420px; left:0px; width: 500px;">
+					<p>Figure 15. Example track of a rare and abnormal behaviour. Consisting of a crowd of people walking towards the right (green). A person walks against the flow of traffic (red).</p>
+				</div>
+			</div>	
+		</article>
+
+		<article id="aggressive-pattern">
+			<div class="text-content">
+				<h2>5. Agressive Pattern</h2>
+				<h3>As citizens we have to be aware of datasets that stands behind recognition patterns 
+				later apply in the public space. </h3> 
+				<p>Video surveillance equipment can be easily and cheaply deployed to monitor practically any environment. The value of doing so, however, is indeed questioned. Surveillance systems are often ineffective due to insufficient numbers of trained supervisors watching the footage and the natural limits of human attention capabilities. This is understandable, when considering the huge numbers of cameras that require supervision, the monotonic nature of the footage, and the alertness required to pick up on events and provide an immediate response. Often, “violence detection” refers to detecting violent scenes in motion pictures and TV broadcasts. The term “violence” may refer to anything from explosions to more subtle actions. Sometimes a significant change in the scene (a “surprising event”) may be considered an act of violence.</p>
+				<p>Since very often there is lack of relevant <i>violent</i> high quality footage or it's not giving enough repetitive results to be recognized as a violent pattern - algorithms are trained based on very specific databases like aggressive behaviour during sports games or cctv records from jails. Figure 16,17 are reconstructed images from the Lake Erie Correctional Institute, Ohio, United States - prison with a medium and minimum security class. </p>    
+			</div>
+			<div class="image-container block-5">
+				<img src="all-images/01_aggression_NG.jpg">
+				<div class="extra-text" style="top: 685px; left:0px; width: 800px;">
+					<p>Figure 15. Image reconstructed in the public space from the violent database of Lake Erie Correctional Institute, Ohio, US. If we are under constant surveillance that is pretedermined by recognition of unusual and violent behaviour, how this affect our freedom?</p>
+				</div>
+			</div>	
+			<div class="image-container block-5">
+				<img src="all-images/02_aggression_NG.jpg">
+			</div>	
+			<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/428157826?autoplay=1&loop=1&portrait=0" style="position:absolute;top:110px;left:0;width:80%;height:80%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		</article>
+	</main>
+
+</body>
+</html>

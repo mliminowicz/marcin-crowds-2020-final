@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Fleya-Light';
+    src: url('Fleya-light.woff')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fleya-LightItalic';
+    src: url('Fleya-LightItalic.ttf')
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Bold';
+    src: url('SuisseIntl-Bold.woff')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Book';
+    src: url('SuisseIntl-Book.woff')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RightGrotesk-WideMedium';
+    src: url('RightGrotesk-WideMedium.ttf')
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangBleuVersailles-BookItalic';
+    src: url('SangBleuVersailles-BookItalic.ttf')
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+body, html {
+	min-height: 100vh;
+}
+
+header {
+	font-size: 10px;
+	line-height: 0.9em;
+	letter-spacing: 0.01em;
+}
+
+body {
+	font-family:'SuisseIntl-Book';
+	line-height: 1.5em;
+	margin: 30px;
+	color: black;
+	letter-spacing: 0.01em;	
+	width: 300vw;
+	overflow: auto;
+	background: white;
+}
+
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-flow: dense;
+	grid-gap: 2vw;
+	padding: 4vw;
+}
+
+main article {
+	grid-row: span 2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 1vw;
+}
+
+article.hovered .text-content {
+	opacity: 1;
+}
+
+#social-force,
+#aggressive-pattern {
+	grid-row: span 1;
+	min-height: 150px;
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-columns: 25fr 37.5fr 37.5fr;
+}
+
+#social-force .text-content,
+#aggressive-pattern .text-content {
+	grid-row: span 1;
+}
+.text-content {
+	grid-row: span 1;
+	width: 30vw;
+	opacity: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+#perspective-map .block-2 {
+	grid-row: 2;
+	grid-column: 3;
+}
+#perspective-map .block-3 {
+	grid-row: 3;
+	grid-column: 4;
+}
+
+#crowd-density .block-5 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+#abnormal-patterns .block-4 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+h2 {
+	margin: 0;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: 'SuisseIntl-Book';
+	font-style: normal;
+	margin: 0;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: 'Fleya-LightItalic';
+	font-style: italic;
+	line-height: 0.9em;
+	margin: 0;
+	font-size: 40px;
+}
+
+
+
+p {
+	font-family: 'SuisseIntl-Book';
+	line-height: 1.3em;
+	font-size: 12px;
+}
+
+.image-container {
+	position: relative;
+}
+
+.image-container.text-visible .extra-text {
+	display: block;
+}
+
+.extra-text {
+	position: absolute;
+	display: none;
+}
