@@ -35,7 +35,7 @@
 
 @font-face {
     font-family: 'SangBleuVersailles-BookItalic';
-    src: url('SangBleuVersailles-BookItalic.ttf')
+    src: url('SangBleuVersailles-BookItalic.ttf');
     font-weight: normal;
     font-style: italic;
 }
