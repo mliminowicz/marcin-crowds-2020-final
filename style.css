@@ -27,10 +27,10 @@
 }
 
 @font-face {
-    font-family: 'RightGrotesk-WideMedium';
-    src: url('RightGrotesk-WideMedium.ttf');
+    font-family: 'BingoSerif-Italic';
+    src: url('BingoSerif-Italic.ttf');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
@@ -148,8 +148,8 @@ h1 {
 }
 
 h3 {
-	font-family: 'Till-Normal';
-	font-style: normal;
+	font-family: 'BingoSerif-Italic';
+	font-style: italic;
 	line-height: 0.9em;
 	margin: 0;
 	font-size: 40px;
