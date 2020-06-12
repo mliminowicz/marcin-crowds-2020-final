@@ -100,7 +100,7 @@ article.hovered .text-content {
 }
 .text-content {
 	grid-row: span 1;
-	width: 35vw;
+	width: 30vw;
 	opacity: 0;
 }
 
