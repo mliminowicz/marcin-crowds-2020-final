@@ -150,9 +150,17 @@ h1 {
 h3 {
 	font-family: 'SangBleuVersailles-BookItalic';
 	font-style: italic;
-	line-height: 0.9em;
+	line-height: 1.0em;
 	margin: 0;
 	font-size: 40px;
+}
+
+h4 {
+	font-family: 'SangBleuVersailles-BookItalic';
+	font-style: italic;
+	line-height: 1.0em;
+	margin: 0;
+	font-size: 12px;
 }
 
 
